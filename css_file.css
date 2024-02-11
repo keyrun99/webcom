@@ -1,0 +1,382 @@
+/*style.css*/
+
+body{
+    font-family: 'montserrat', 'sans-serif';
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_split_screen*/
+.split {
+height: 100%;
+position: fixed;
+z-index: 1;
+top: 0;
+overflow-x: hidden;
+padding-top: 5px;
+}
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_split_screen*/
+
+/* property of the left split*/
+.left {
+    width: 30%;
+    left: 0;
+    background-color: #f2f2f2;
+}
+
+
+/* property of the right split*/
+.right {
+    width: 70%;
+    right: 0;
+    background-color: #EBE7FF;
+    padding-left: 20px;
+}
+
+
+@media screen and (max-width:980px) {
+	.left{
+		width:100%;
+        height: 20%;
+        background-color: #f2f2f2;
+    }
+
+    .right{
+        height:100%;
+        width:100%;
+        top: 20%;
+    }
+    .left .caption{
+        margin-top: -65px;
+    }
+
+    .left .caption h2 {
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        margin-bottom: .25em;
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        /*padding-bottom: 20px;*/
+    }
+
+    .left .caption h1 {
+        margin: 5px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .left a{
+        margin-top: 10px;
+    }
+
+
+    .right .content {
+        padding-left: 20px;
+    }
+    .content p{
+        margin-left: -20px;
+    }
+
+    .content h2{
+        margin-left: -20px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+	.left{
+		width:100%;
+        height: 35%;
+        background-color: #f2f2f2;
+        margin-top: -10px;
+    }
+
+    .right{
+        height:100%;
+        width:100%;
+        top: 30%;
+    }
+    .left .caption{
+        margin-top: -85px;
+    }
+
+    .left .caption h2 {
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        margin-bottom: .25em;
+        font-size: 25px;
+        margin: 0px;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+    }
+
+    .left .caption h1 {
+        margin: 5px;
+    }
+
+    .left a{
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+.left .caption {
+    position: relative;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
+    top: 40%;
+}
+
+
+.caption h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom:1em;
+    display: block;
+    padding-right: 10px;
+}
+
+.caption h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom:1em;
+    display: block;
+    padding-right: 15px;
+}
+
+
+.caption .button {
+    background: #D6FED3;
+    color: #0902C9;
+    border-radius: 8px;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.25s ease all; /*transition during the hover  not necessary */
+}
+
+
+.caption .button:hover {
+    background: #C2E3FF;
+    color: #03017E;
+}
+
+/* property of content */
+.content {
+    padding-bottom: 20px;
+}
+
+.content p{
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+/*styles of the heading element at both page*/
+.content h1{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+
+.content h2{
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 0px;
+    display: block;
+}
+
+
+.content h3{
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 40px;
+    margin: 0;
+    display: block;
+}
+
+.right .content h1{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 40px;
+    display: block;
+}
+
+
+
+/*property of text class inside of split right at the heading*/
+.text {
+    text-align: justify;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+.text h1{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+.text h2{
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 0px;
+    display: block;
+}
+
+.text p{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+
+/*[roperty of menu option ends*/
+/*property of work experience and education which is detailed in table class options starts*/
+.dummy-table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+/*property of header and description*/
+th, td {
+    text-align: left; 
+    padding-left: 26px;
+    padding-bottom: 08px;
+    padding-right:20px;
+    text-align: justify;
+}
+
+/*property of list within the dummy table*/
+.dummy-table li{
+    list-style-type: square;
+}
+
+
+
+/*property of work experience and education which is detailed in table options ends*/
+
+.img_resume {
+    position: relative;
+    text-align: center;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+    color: rgb(149, 209, 219);
+}
+
+
+
+
+/*style of summary table id naming summary itroduced in index page*/
+/*https://https://www.w3schools.com/css/css_table.asp*/
+#summary {
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 40px;
+}
+
+/*styles of table header section*/
+/*property of table options ends*/
+#summary th {
+    border: 1px solid white;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #FFCAA1;
+    color: #000000;
+}
+
+/*style of table description section*/
+#summary td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/*color of even rows of table*/
+#summary tr:nth-child(even){
+    background-color: #add1ec;
+}
+
+/*color of odd rows of table*/
+#summary tr:nth-child(odd){
+    background-color: #96ce97;
+}
+
+/*property of table options ends*/
+
+
+
+
+
+/*https://www.w3schools.com/css/css_link.asp*/
+/*style of link (a) elments*/
+/*
+a {
+    color: rgb(255, 0, 0);
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: rgb(192, 192, 247);
+    text-align: center;
+}
+a:hover {
+    background-color: #f20808;
+    color: white;
+}
+
+*/
+
+/*style of the paragraph element*/
+p{
+    font-size: 17px;
+    color:rgb(29, 27, 27);
+    line-height: 1.0;
+    padding-top: 0;
+    display: block;
+}
+
+/*style of h3 element a table class*/
+.table h3{
+    padding: 0px;
+    font-weight: bold;
+}
+
+.footer{
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+@media screen and (max-width:980px) {
+    .footer{
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width:750px) {
+    .footer{
+        padding-bottom: 200px;
+    }
+}
+
+
+
